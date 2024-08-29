@@ -10,7 +10,6 @@
 
 body {
     background-color: black;
-    background-image: url(/img/matrix_bg);
     background-size: contain;
     color: rgb(0, 219, 0);
     font-family: monospace;
@@ -27,6 +26,22 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
+}
+#click-here {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    top: 70px;
+    left: -100px;
+    font-size: 20px;
+}
+.arrow {
+    transform: rotateZ(45deg);
+   
+
 }
 #bitcoin {
     background-color: transparent;
@@ -34,6 +49,7 @@ body {
     cursor: pointer;
     animation: rotate 7s infinite linear;
 }
+
 #bitcoin-icon {
     background-color: black;
     border-radius: 50%;
