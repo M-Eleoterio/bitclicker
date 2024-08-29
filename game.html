@@ -1,16 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BitClicker</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <section id="console">
-        <div class="console-line"><p class="info">Usuário: </p><p class="info-text">r00t_cr4ck3r</p></div>
-        <div class="console-line"><p class="info">Bitcoins: </p><p class="info-text" id="bitcoin-counter">₿00.00</p></div>
-        <div class="console-line"><p class="info"></p><p class="info-text"></p></div>
+        <div class="console-line">
+            <p class="info">Usuário: </p>
+            <p class="info-text">r00t_cr4ck3r</p>
+        </div>
+        <div class="console-line">
+            <p class="info">Bitcoins: </p>
+            <p class="info-text" id="bitcoin-counter">₿00.00</p>
+        </div>
+        <div class="console-line">
+            <p class="info"></p>
+            <p class="info-text"></p>
+        </div>
         <br>
         <button class="btn-buy" id="automine">Auto mine (<span id="autoclickprice"></span>)</button>
         <button class="btn-buy" id="clickplus">Mais p/ clique (<span id="perclickprice"></span>)</button>
@@ -24,10 +35,19 @@
     </div>
 
     <section id="clicker">
+        <div id="click-here">
+            <span>Clique aqui para</span>
+            <span>ganhar bitcoins!</span>
+            <span class="arrow">-----></span>
+            <span class="arrow">-----></span>
+            <span class="arrow">-----></span>
+        </div>
         <button id="bitcoin" onclick="onClick()"><img id="bitcoin-icon" src="img/bitcoin_icon.png" alt=""></button>
     </section>
-    
-    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.js"
+        integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
     <script src="script.js"></script>
 </body>
+
 </html>
