@@ -38,8 +38,8 @@ $("#automine").on('click', () => {
 })
 
 $("#secret").on("click", () => {
-    if (bitcoin >= '500') {
-        bitcoin-= 500;
+    if (bitcoin >= '200000') {
+        bitcoin-= 200000;
         const cinasIcon = $("#bitcoin-icon").attr('src','img/cinas.png');
         cinasIcon.css('width', '520px')
         cinasIcon.css('border-radius', '50%')
